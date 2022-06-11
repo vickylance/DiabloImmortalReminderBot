@@ -41,7 +41,9 @@ client.on("ready", async () => {
             .setTitle(event?.msg?.title || "Default Title")
             .setTimestamp()
             .setDescription(event?.msg?.desc || "Default Description");
-          console.log(`Sending notification for event ${event?.title}`);
+          console.log(
+            `Sending notification for event ${event?.title} and cron ${event?.cron}`
+          );
           channel.send({ content: "<@&983946915781672971>", embeds: [embed] });
         }
       },
