@@ -1,0 +1,18 @@
+{
+  "name": "diabloeventbot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Vignesh S",
+  "license": "ISC",
+  "dependencies": {
+    "discord-command-parser": "^1.5.3",
+    "discord.js": "^13.8.0",
+    "node-cron": "^3.0.1",
+    "uuid": "^8.3.2"
+  }
+}
