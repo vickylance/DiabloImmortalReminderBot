@@ -302,7 +302,7 @@ const eventJson = [
 ];
 
 client.on("ready", async () => {
-  let channel = client.channels.cache.get(`983946396740767794`);
+  let channel = client.channels.cache.get(`984038249825722368`);
 
   for (const event of eventJson) {
     cron.schedule(
@@ -317,7 +317,7 @@ client.on("ready", async () => {
           console.log(
             `Sending notification for event ${event?.title} and cron ${event?.cron}`
           );
-          channel.send({ content: "<@&983946915781672971>", embeds: [embed] });
+          channel.send({ content: "<@&985513803905134672>", embeds: [embed] });
         }
       },
       {
