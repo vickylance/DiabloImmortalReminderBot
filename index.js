@@ -9,7 +9,7 @@ const client = new Client({
 
 const eventJson = [
   {
-    cron: "13 11 * * 1",
+    cron: "15 11 * * 1",
     msg: {
       title: "Test",
       desc: "Test",
