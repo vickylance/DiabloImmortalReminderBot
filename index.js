@@ -326,3 +326,5 @@ client.on("ready", async () => {
   }
   console.log("Scheduled all events");
 });
+
+client.login(botToken);
