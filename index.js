@@ -192,181 +192,181 @@ const eventJson = [
     },
   },
 
-  // Zone events
+  // // Zone events
 
-  // Haunted Carriage
-  {
-    cron: "0 20 7 * * 2,6",
-    msg: {
-      title: "Haunted Carriage",
-      desc: "Haunted Carriage starting in 10 mins in Ashwold Cemetery",
-      color: "#00D166",
-    },
-  },
-  {
-    cron: "0 25 7 * * 2,6",
-    msg: {
-      title: "Haunted Carriage",
-      desc: "Haunted Carriage starting in 5 mins in Ashwold Cemetery",
-      color: "#00D166",
-    },
-  },
-  {
-    cron: "0 30 7 * * 2,6",
-    msg: {
-      title: "Haunted Carriage",
-      desc: "Haunted Carriage started in Ashwold Cemetery",
-      color: "#00D166",
-    },
-  },
-  {
-    cron: "0 50 15 * * 2,6",
-    msg: {
-      title: "Haunted Carriage",
-      desc: "Haunted Carriage starting in 10 mins in Ashwold Cemetery",
-      color: "#00D166",
-    },
-  },
-  {
-    cron: "0 55 15 * * 2,6",
-    msg: {
-      title: "Haunted Carriage",
-      desc: "Haunted Carriage starting in 5 mins in Ashwold Cemetery",
-      color: "#00D166",
-    },
-  },
-  {
-    cron: "0 0 16 * * 2,6",
-    msg: {
-      title: "Haunted Carriage",
-      desc: "Haunted Carriage starting now in Ashwold Cemetery",
-      color: "#00D166",
-    },
-  },
-  {
-    cron: "0 20 17 * * 2,6",
-    msg: {
-      title: "Haunted Carriage",
-      desc: "Haunted Carriage starting in 10 mins in Ashwold Cemetery",
-      color: "#00D166",
-    },
-  },
-  {
-    cron: "0 25 17 * * 2,6",
-    msg: {
-      title: "Haunted Carriage",
-      desc: "Haunted Carriage starting in 5 mins in Ashwold Cemetery",
-      color: "#00D166",
-    },
-  },
-  {
-    cron: "0 30 17 * * 2,6",
-    msg: {
-      title: "Haunted Carriage",
-      desc: "Haunted Carriage starting now in Ashwold Cemetery",
-      color: "#00D166",
-    },
-  },
+  // // Haunted Carriage
+  // {
+  //   cron: "0 20 7 * * 2,6",
+  //   msg: {
+  //     title: "Haunted Carriage",
+  //     desc: "Haunted Carriage starting in 10 mins in Ashwold Cemetery",
+  //     color: "#00D166",
+  //   },
+  // },
+  // {
+  //   cron: "0 25 7 * * 2,6",
+  //   msg: {
+  //     title: "Haunted Carriage",
+  //     desc: "Haunted Carriage starting in 5 mins in Ashwold Cemetery",
+  //     color: "#00D166",
+  //   },
+  // },
+  // {
+  //   cron: "0 30 7 * * 2,6",
+  //   msg: {
+  //     title: "Haunted Carriage",
+  //     desc: "Haunted Carriage started in Ashwold Cemetery",
+  //     color: "#00D166",
+  //   },
+  // },
+  // {
+  //   cron: "0 50 15 * * 2,6",
+  //   msg: {
+  //     title: "Haunted Carriage",
+  //     desc: "Haunted Carriage starting in 10 mins in Ashwold Cemetery",
+  //     color: "#00D166",
+  //   },
+  // },
+  // {
+  //   cron: "0 55 15 * * 2,6",
+  //   msg: {
+  //     title: "Haunted Carriage",
+  //     desc: "Haunted Carriage starting in 5 mins in Ashwold Cemetery",
+  //     color: "#00D166",
+  //   },
+  // },
+  // {
+  //   cron: "0 0 16 * * 2,6",
+  //   msg: {
+  //     title: "Haunted Carriage",
+  //     desc: "Haunted Carriage starting now in Ashwold Cemetery",
+  //     color: "#00D166",
+  //   },
+  // },
+  // {
+  //   cron: "0 20 17 * * 2,6",
+  //   msg: {
+  //     title: "Haunted Carriage",
+  //     desc: "Haunted Carriage starting in 10 mins in Ashwold Cemetery",
+  //     color: "#00D166",
+  //   },
+  // },
+  // {
+  //   cron: "0 25 17 * * 2,6",
+  //   msg: {
+  //     title: "Haunted Carriage",
+  //     desc: "Haunted Carriage starting in 5 mins in Ashwold Cemetery",
+  //     color: "#00D166",
+  //   },
+  // },
+  // {
+  //   cron: "0 30 17 * * 2,6",
+  //   msg: {
+  //     title: "Haunted Carriage",
+  //     desc: "Haunted Carriage starting now in Ashwold Cemetery",
+  //     color: "#00D166",
+  //   },
+  // },
 
-  // Ancient Arena
-  {
-    cron: "0 50 16 * * 2,4,6,7",
-    msg: {
-      title: "Ancient Arena",
-      desc: "Ancient Arena starting in 10 mins. Show your might and get amazing rewards.",
-      color: "#00D166",
-    },
-  },
-  {
-    cron: "0 55 16 * * 2,4,6,7",
-    msg: {
-      title: "Ancient Arena",
-      desc: "Ancient Arena starting in 5 mins. Show your might and get amazing rewards.",
-      color: "#00D166",
-    },
-  },
-  {
-    cron: "0 0 17 * * 2,4,6,7",
-    msg: {
-      title: "Ancient Arena",
-      desc: "Ancient Arena starting now. Show your might and get amazing rewards.",
-      color: "#00D166",
-    },
-  },
+  // // Ancient Arena
+  // {
+  //   cron: "0 50 16 * * 2,4,6,7",
+  //   msg: {
+  //     title: "Ancient Arena",
+  //     desc: "Ancient Arena starting in 10 mins. Show your might and get amazing rewards.",
+  //     color: "#00D166",
+  //   },
+  // },
+  // {
+  //   cron: "0 55 16 * * 2,4,6,7",
+  //   msg: {
+  //     title: "Ancient Arena",
+  //     desc: "Ancient Arena starting in 5 mins. Show your might and get amazing rewards.",
+  //     color: "#00D166",
+  //   },
+  // },
+  // {
+  //   cron: "0 0 17 * * 2,4,6,7",
+  //   msg: {
+  //     title: "Ancient Arena",
+  //     desc: "Ancient Arena starting now. Show your might and get amazing rewards.",
+  //     color: "#00D166",
+  //   },
+  // },
 
-  // Ancient Nightmare
-  {
-    cron: "0 20 7 * * 3,5",
-    msg: {
-      title: "Ancient Nightmare",
-      desc: "Ancient Nightmare is starting now in 10 mins in Mist Valley in the middle of Mount Zavain",
-      color: "#00D166",
-    },
-  },
-  {
-    cron: "0 25 7 * * 3,5",
-    msg: {
-      title: "Ancient Nightmare",
-      desc: "Ancient Nightmare is starting now in 5 mins in Mist Valley in the middle of Mount Zavain",
-      color: "#00D166",
-    },
-  },
-  {
-    cron: "0 30 7 * * 3,5",
-    msg: {
-      title: "Ancient Nightmare",
-      desc: "Ancient Nightmare is starting now in Mist Valley in the middle of Mount Zavain",
-      color: "#00D166",
-    },
-  },
-  {
-    cron: "0 20 17 * * 3,5",
-    msg: {
-      title: "Ancient Nightmare",
-      desc: "Ancient Nightmare is starting now in 10 mins in Mist Valley in the middle of Mount Zavain",
-      color: "#00D166",
-    },
-  },
-  {
-    cron: "0 25 17 * * 3,5",
-    msg: {
-      title: "Ancient Nightmare",
-      desc: "Ancient Nightmare is starting now in 5 mins in Mist Valley in the middle of Mount Zavain",
-      color: "#00D166",
-    },
-  },
-  {
-    cron: "0 30 17 * * 3,5",
-    msg: {
-      title: "Ancient Nightmare",
-      desc: "Ancient Nightmare is starting now in Mist Valley in the middle of Mount Zavain",
-      color: "#00D166",
-    },
-  },
-  {
-    cron: "0 50 15 * * 3,5",
-    msg: {
-      title: "Ancient Nightmare",
-      desc: "Ancient Nightmare is starting now in 10 mins in Mist Valley in the middle of Mount Zavain",
-      color: "#00D166",
-    },
-  },
-  {
-    cron: "0 55 15 * * 3,5",
-    msg: {
-      title: "Ancient Nightmare",
-      desc: "Ancient Nightmare is starting now in 5 mins in Mist Valley in the middle of Mount Zavain",
-      color: "#00D166",
-    },
-  },
-  {
-    cron: "0 0 16 * * 3,5",
-    msg: {
-      title: "Ancient Nightmare",
-      desc: "Ancient Nightmare is starting now in Mist Valley in the middle of Mount Zavain",
-      color: "#00D166",
-    },
-  },
+  // // Ancient Nightmare
+  // {
+  //   cron: "0 20 7 * * 3,5",
+  //   msg: {
+  //     title: "Ancient Nightmare",
+  //     desc: "Ancient Nightmare is starting now in 10 mins in Mist Valley in the middle of Mount Zavain",
+  //     color: "#00D166",
+  //   },
+  // },
+  // {
+  //   cron: "0 25 7 * * 3,5",
+  //   msg: {
+  //     title: "Ancient Nightmare",
+  //     desc: "Ancient Nightmare is starting now in 5 mins in Mist Valley in the middle of Mount Zavain",
+  //     color: "#00D166",
+  //   },
+  // },
+  // {
+  //   cron: "0 30 7 * * 3,5",
+  //   msg: {
+  //     title: "Ancient Nightmare",
+  //     desc: "Ancient Nightmare is starting now in Mist Valley in the middle of Mount Zavain",
+  //     color: "#00D166",
+  //   },
+  // },
+  // {
+  //   cron: "0 20 17 * * 3,5",
+  //   msg: {
+  //     title: "Ancient Nightmare",
+  //     desc: "Ancient Nightmare is starting now in 10 mins in Mist Valley in the middle of Mount Zavain",
+  //     color: "#00D166",
+  //   },
+  // },
+  // {
+  //   cron: "0 25 17 * * 3,5",
+  //   msg: {
+  //     title: "Ancient Nightmare",
+  //     desc: "Ancient Nightmare is starting now in 5 mins in Mist Valley in the middle of Mount Zavain",
+  //     color: "#00D166",
+  //   },
+  // },
+  // {
+  //   cron: "0 30 17 * * 3,5",
+  //   msg: {
+  //     title: "Ancient Nightmare",
+  //     desc: "Ancient Nightmare is starting now in Mist Valley in the middle of Mount Zavain",
+  //     color: "#00D166",
+  //   },
+  // },
+  // {
+  //   cron: "0 50 15 * * 3,5",
+  //   msg: {
+  //     title: "Ancient Nightmare",
+  //     desc: "Ancient Nightmare is starting now in 10 mins in Mist Valley in the middle of Mount Zavain",
+  //     color: "#00D166",
+  //   },
+  // },
+  // {
+  //   cron: "0 55 15 * * 3,5",
+  //   msg: {
+  //     title: "Ancient Nightmare",
+  //     desc: "Ancient Nightmare is starting now in 5 mins in Mist Valley in the middle of Mount Zavain",
+  //     color: "#00D166",
+  //   },
+  // },
+  // {
+  //   cron: "0 0 16 * * 3,5",
+  //   msg: {
+  //     title: "Ancient Nightmare",
+  //     desc: "Ancient Nightmare is starting now in Mist Valley in the middle of Mount Zavain",
+  //     color: "#00D166",
+  //   },
+  // },
 ];
 
 client.on("ready", async () => {
