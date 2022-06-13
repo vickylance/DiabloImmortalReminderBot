@@ -6,10 +6,6 @@ const botToken = process.env.DISCORD_TOKEN;
 const client = new Client({
   intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MESSAGES],
 });
-client.on("ready", function (e) {
-  console.log(`Logged in as ${client.user.tag}!`);
-});
-client.login(botToken);
 
 const eventJson = [
   // Daily reset
@@ -302,9 +298,11 @@ const eventJson = [
 ];
 
 client.on("ready", async () => {
+  console.log(`Logged in as ${client.user.tag}!`);
   let channel = client.channels.cache.get(`984038249825722368`);
 
   for (const event of eventJson) {
+    console.log(`Scheduling for event ${event?.msg?.title}`);
     cron.schedule(
       event.cron,
       () => {
@@ -326,4 +324,5 @@ client.on("ready", async () => {
       }
     );
   }
+  console.log("Scheduled all events");
 });
