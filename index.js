@@ -10,7 +10,7 @@ const client = new Client({
 const eventJson = [
   // Daily reset
   {
-    cron: "0 30 22 * * 1-7",
+    cron: "30 22 * * 1-7",
     msg: {
       title: "Daily Reset",
       desc: "The server is reset bois. Get back to grinding and do your Dailies.",
@@ -20,7 +20,7 @@ const eventJson = [
 
   // // Shadow lottery
   // {
-  //   cron: "0 30 7 * * 1-6",
+  //   cron: "30 7 * * 1-6",
   //   msg: {
   //     title: "Shadow Lottery",
   //     desc: "Shadow lottery is up. Apply for Lottery to get Akiba's signets",
