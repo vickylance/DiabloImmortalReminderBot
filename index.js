@@ -8,14 +8,6 @@ const client = new Client({
 });
 
 const eventJson = [
-  {
-    cron: "15 11 * * 1",
-    msg: {
-      title: "Test",
-      desc: "Test",
-      color: "#FD0061",
-    },
-  },
   // Daily reset
   {
     cron: "30 22 * * 1,2,3,4,5,6,7",
