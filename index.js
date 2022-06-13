@@ -20,7 +20,23 @@ const eventJson = [
 
   // Shadow lottery
   {
-    cron: "0 30 7,13,16 * * 1-6",
+    cron: "0 30 7 * * 1-6",
+    msg: {
+      title: "Shadow Lottery",
+      desc: "Shadow lottery is up. Apply for Lottery to get Akiba's signets",
+      color: "#A652BB",
+    },
+  },
+  {
+    cron: "0 30 13 * * 1-6",
+    msg: {
+      title: "Shadow Lottery",
+      desc: "Shadow lottery is up. Apply for Lottery to get Akiba's signets",
+      color: "#A652BB",
+    },
+  },
+  {
+    cron: "0 30 16 * * 1-6",
     msg: {
       title: "Shadow Lottery",
       desc: "Shadow lottery is up. Apply for Lottery to get Akiba's signets",
@@ -48,7 +64,15 @@ const eventJson = [
 
   // Vault raid
   {
-    cron: "0 30 7,14 * * 1-7",
+    cron: "0 30 7 * * 1-7",
+    msg: {
+      title: "Vault Raid",
+      desc: "Immortal's Vault is open. Lets go for their Vault raid.",
+      color: "#A652BB",
+    },
+  },
+  {
+    cron: "0 30 14 * * 1-7",
     msg: {
       title: "Vault Raid",
       desc: "Immortal's Vault is open. Lets go for their Vault raid.",
@@ -136,7 +160,31 @@ const eventJson = [
 
   // Battlegrounds
   {
-    cron: "0 30 3,7,13,17 * * 1-7",
+    cron: "0 30 3 * * 1-7",
+    msg: {
+      title: "Battlegrounds",
+      desc: "Battlegrounds is starting now. Do your daily 3 battlegrounds to get rewards.",
+      color: "#F8C300",
+    },
+  },
+  {
+    cron: "0 30 7 * * 1-7",
+    msg: {
+      title: "Battlegrounds",
+      desc: "Battlegrounds is starting now. Do your daily 3 battlegrounds to get rewards.",
+      color: "#F8C300",
+    },
+  },
+  {
+    cron: "0 30 13 * * 1-7",
+    msg: {
+      title: "Battlegrounds",
+      desc: "Battlegrounds is starting now. Do your daily 3 battlegrounds to get rewards.",
+      color: "#F8C300",
+    },
+  },
+  {
+    cron: "0 30 17 * * 1-7",
     msg: {
       title: "Battlegrounds",
       desc: "Battlegrounds is starting now. Do your daily 3 battlegrounds to get rewards.",
@@ -248,7 +296,7 @@ const eventJson = [
 
   // Ancient Nightmare
   {
-    cron: "0 20 7,17 * * 3,5",
+    cron: "0 20 7 * * 3,5",
     msg: {
       title: "Ancient Nightmare",
       desc: "Ancient Nightmare is starting now in 10 mins in Mist Valley in the middle of Mount Zavain",
@@ -256,7 +304,7 @@ const eventJson = [
     },
   },
   {
-    cron: "0 25 7,17 * * 3,5",
+    cron: "0 25 7 * * 3,5",
     msg: {
       title: "Ancient Nightmare",
       desc: "Ancient Nightmare is starting now in 5 mins in Mist Valley in the middle of Mount Zavain",
@@ -264,7 +312,31 @@ const eventJson = [
     },
   },
   {
-    cron: "0 30 7,17 * * 3,5",
+    cron: "0 30 7 * * 3,5",
+    msg: {
+      title: "Ancient Nightmare",
+      desc: "Ancient Nightmare is starting now in Mist Valley in the middle of Mount Zavain",
+      color: "#00D166",
+    },
+  },
+  {
+    cron: "0 20 17 * * 3,5",
+    msg: {
+      title: "Ancient Nightmare",
+      desc: "Ancient Nightmare is starting now in 10 mins in Mist Valley in the middle of Mount Zavain",
+      color: "#00D166",
+    },
+  },
+  {
+    cron: "0 25 17 * * 3,5",
+    msg: {
+      title: "Ancient Nightmare",
+      desc: "Ancient Nightmare is starting now in 5 mins in Mist Valley in the middle of Mount Zavain",
+      color: "#00D166",
+    },
+  },
+  {
+    cron: "0 30 17 * * 3,5",
     msg: {
       title: "Ancient Nightmare",
       desc: "Ancient Nightmare is starting now in Mist Valley in the middle of Mount Zavain",
@@ -325,19 +397,28 @@ client.on("ready", async () => {
     );
   }
   console.log("Scheduled all events");
+
+  setInterval(() => {
+    const formatMemoryUsage = (data) =>
+      `${Math.round((data / 1024 / 1024) * 100) / 100} MB`;
+    const memoryData = process.memoryUsage();
+    const memoryUsage = {
+      rss: `${formatMemoryUsage(
+        memoryData.rss
+      )} -> Resident Set Size - total memory allocated for the process execution`,
+      heapTotal: `${formatMemoryUsage(
+        memoryData.heapTotal
+      )} -> total size of the allocated heap`,
+      heapUsed: `${formatMemoryUsage(
+        memoryData.heapUsed
+      )} -> actual memory used during the execution`,
+      external: `${formatMemoryUsage(
+        memoryData.external
+      )} -> V8 external memory`,
+    };
+
+    console.log(memoryUsage);
+  }, 1000 * 60);
 });
 
 client.login(botToken);
-
-setInterval(() => {
-  const formatMemoryUsage = (data) => `${Math.round(data / 1024 / 1024 * 100) / 100} MB`
-  const memoryData = process.memoryUsage()
-  const memoryUsage = {
-    rss: `${formatMemoryUsage(memoryData.rss)} -> Resident Set Size - total memory allocated for the process execution`,
-    heapTotal: `${formatMemoryUsage(memoryData.heapTotal)} -> total size of the allocated heap`,
-    heapUsed: `${formatMemoryUsage(memoryData.heapUsed)} -> actual memory used during the execution`,
-    external: `${formatMemoryUsage(memoryData.external)} -> V8 external memory`,
-  }
-
-  console.log(memoryUsage)
-}, 1000*60);
