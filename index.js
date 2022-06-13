@@ -10,7 +10,7 @@ const client = new Client({
 const eventJson = [
   // Daily reset
   {
-    cron: "30 22 * * 1-7",
+    cron: "30 22 * * 1,2,3,4,5,6,7",
     msg: {
       title: "Daily Reset",
       desc: "The server is reset bois. Get back to grinding and do your Dailies.",
