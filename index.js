@@ -387,7 +387,7 @@ client.on("ready", async () => {
           console.log(
             `Sending notification for event ${event?.title} and cron ${event?.cron}`
           );
-          channel.send({ content: "<@&967912561251065876>", embeds: [embed] });
+          channel.send({ content: "<@&987001142091317339>", embeds: [embed] });
         }
       },
       {
