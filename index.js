@@ -1,7 +1,12 @@
 const { Client, Intents, MessageEmbed } = require("discord.js");
 const cron = require("node-cron");
+const dotenv = require('dotenv');
 
+dotenv.config();
 const botToken = process.env.DISCORD_TOKEN;
+const channelID = process.env.CHANNEL_ID; 
+
+console.log("Discord Key set: " + process.env.DISCORD_TOKEN);
 
 const client = new Client({
   intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MESSAGES],
@@ -13,7 +18,7 @@ const eventJson = [
     cron: "30 22 * * 1,2,3,4,5,6,7",
     msg: {
       title: "Daily Reset",
-      desc: "The server is reset bois. Get back to grinding and do your Dailies.",
+      desc: "The server is reset. Get back to grinding and do your Dailies.",
       color: "#FD0061",
     },
   },
@@ -49,7 +54,7 @@ const eventJson = [
     cron: "30 22 * * 1-6",
     msg: {
       title: "Shadow Contracts",
-      desc: "1 Shadow Contract is reset. Do your Contract.",
+      desc: "1 Shadow Contract is reset.",
       color: "#A652BB",
     },
   },
@@ -57,7 +62,7 @@ const eventJson = [
     cron: "30 22 * * 7",
     msg: {
       title: "Shadow Contracts",
-      desc: "3 Shadow Contracts are reset. Do your Contracts.",
+      desc: "3 Shadow Contracts are reset.",
       color: "#A652BB",
     },
   },
@@ -95,7 +100,7 @@ const eventJson = [
     cron: "15 15 * * 7",
     msg: {
       title: "Rite of Exile",
-      desc: "Rite of exile is commencing now in 15 mins. Need all hands on Deck needed.",
+      desc: "Rite of exile is commencing now in 15 mins.",
       color: "#A652BB",
     },
   },
@@ -103,7 +108,7 @@ const eventJson = [
     cron: "20 15 * * 7",
     msg: {
       title: "Rite of Exile",
-      desc: "Rite of exile is commencing now in 10 mins. Need all hands on Deck needed.",
+      desc: "Rite of exile is commencing now in 10 mins.",
       color: "#A652BB",
     },
   },
@@ -111,7 +116,7 @@ const eventJson = [
     cron: "25 15 * * 7",
     msg: {
       title: "Rite of Exile",
-      desc: "Rite of exile is commencing now in 5 mins. Need all hands on Deck needed.",
+      desc: "Rite of exile is commencing now in 5 mins.",
       color: "#A652BB",
     },
   },
@@ -119,7 +124,7 @@ const eventJson = [
     cron: "30 15 * * 7",
     msg: {
       title: "Rite of Exile",
-      desc: "Rite of exile is commencing now. Good luck bois.",
+      desc: "Rite of exile is commencing now.",
       color: "#A652BB",
     },
   },
@@ -129,7 +134,7 @@ const eventJson = [
     cron: "15 13 * * 4,6",
     msg: {
       title: "Shadow War",
-      desc: "Shadow War is commencing now in 15 mins. Need all hands on Deck needed.",
+      desc: "Shadow War is commencing now in 15 mins.",
       color: "#A652BB",
     },
   },
@@ -137,7 +142,7 @@ const eventJson = [
     cron: "20 13 * * 4,6",
     msg: {
       title: "Shadow War",
-      desc: "Shadow War is commencing now in 10 mins. Need all hands on Deck needed.",
+      desc: "Shadow War is commencing now in 10 mins.",
       color: "#A652BB",
     },
   },
@@ -145,7 +150,7 @@ const eventJson = [
     cron: "25 13 * * 4,6",
     msg: {
       title: "Shadow War",
-      desc: "Shadow War is commencing now in 5 mins. Need all hands on Deck needed.",
+      desc: "Shadow War is commencing now in 5 mins.",
       color: "#A652BB",
     },
   },
@@ -153,7 +158,7 @@ const eventJson = [
     cron: "30 13 * * 4,6",
     msg: {
       title: "Shadow War",
-      desc: "Shadow War is commencing now. Good luck bois.",
+      desc: "Shadow War is commencing now.",
       color: "#A652BB",
     },
   },
@@ -371,7 +376,7 @@ const eventJson = [
 
 client.on("ready", async () => {
   console.log(`Logged in as ${client.user.tag}!`);
-  let channel = client.channels.cache.get(`984038249825722368`);
+  let channel = client.channels.cache.get(CHANNEL_ID);
 
   for (const event of eventJson) {
     console.log(`Scheduling for event ${event?.msg?.title}`);
@@ -387,12 +392,12 @@ client.on("ready", async () => {
           console.log(
             `Sending notification for event ${event?.title} and cron ${event?.cron}`
           );
-          channel.send({ content: "<@&987001142091317339>", embeds: [embed] });
+          channel.send({ content: <@&CHANNEL_ID>, embeds: [embed] });
         }
       },
       {
         scheduled: true,
-        timezone: "Asia/Kolkata",
+        timezone: "America/New_York",
       }
     );
   }
