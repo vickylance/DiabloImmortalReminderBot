@@ -3,5 +3,4 @@ Diablo Immortal Event Reminder Bot
 
 .ENV must have:
 
-DISCORD_TOKEN
-ChannelID
+DISCORD_TOKEN, ChannelID and Timezone
