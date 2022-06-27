@@ -4,9 +4,12 @@ const dotenv = require('dotenv');
 
 dotenv.config();
 const botToken = process.env.DISCORD_TOKEN;
-const channelID = process.env.CHANNEL_ID; 
+const channelID = process.env.CHANNEL_ID;
+const timeZone = process.env.TIMEZONE;
 
 console.log("Discord Key set: " + process.env.DISCORD_TOKEN);
+console.log("Channel ID set: " + process.env.CHANNEL_ID);
+console.log("TimeZone set: " + process.env.TIMEZONE);
 
 const client = new Client({
   intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MESSAGES],
@@ -397,7 +400,7 @@ client.on("ready", async () => {
       },
       {
         scheduled: true,
-        timezone: "America/New_York",
+        timezone: timeZone,
       }
     );
   }
